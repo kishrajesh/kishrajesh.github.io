@@ -39,28 +39,36 @@ section {
     padding: 50px 20px;
 }
 
-#projects .project {
-    background: #fff;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-#projects .project img {
+.project {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: calc(50% - 40px); /* 50% width minus margin */
+    box-sizing: border-box;
+}
+
+.project img {
     max-width: 100%;
     height: auto;
 }
 
-#projects .project h2 {
+.project h2 {
     margin: 10px 0;
 }
 
-#projects .project p {
+.project p {
     margin: 10px 0;
 }
 
-#projects .project a {
+.project a {
     color: #007acc;
     text-decoration: none;
     font-weight: bold;
