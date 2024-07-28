@@ -38,13 +38,17 @@ section {
     color: #fff;
     padding: 50px 20px;
 }
-
+x
 #projects .project {
     background: #fff;
     padding: 20px;
     margin: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    /*make 2-column*/
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
 }
 
 #projects .project img {
